@@ -22,10 +22,10 @@ int main(int argc, char *argv[]) {
     } else if (!strcmp(argv[2], "print")) {
       add(argv[1]);
     } else {
-      printf("usage: mpd <file> [add/print]\n");
+      printf("usage: %s <file> [add/print]\n", argv[0]);
     }
   } else {
-    printf("usage: mpd <file> [add/print]\n");
+    printf("usage: %s <file> [add/print]\n", argv[0]);
   }
   return 0;
 }

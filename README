@@ -1,0 +1,17 @@
+Mai Playdata
+============
+
+file-based-database written in C for storing maimai playdata history
+
+this is just a project i made just for fun using the reason of learning database as an excuse.
+
+
+planned file structure :
+---------------------------
+mai-playdata (executable)
+mai-playdata (daemon)
+db/
+├─ rating-history.bin
+├─ track-history/
+   ├─ 2024-06-10.bin
+   ├─ 2024-06-11.bin

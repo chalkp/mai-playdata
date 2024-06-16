@@ -5,7 +5,7 @@
 
 #include "rating/types.h"
 
-size_t read(char *file_path, Rating** ratings) {
+size_t read_rating_from_file(char *file_path, Rating** ratings) {
   FILE *file;
   file = fopen(file_path, "rb");
   if (file == NULL) {

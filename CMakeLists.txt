@@ -11,6 +11,9 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS_DEBUG} -O0 -ggdb -Wall -Wextra -Wpedantic -We
 
 file(GLOB SOURCE_FILES "src/*.c")
 include_directories("include")
-add_executable(mai-playdata ${SOURCE_FILES})
 
-target_sources(mai-playdata PRIVATE src/main.c)
+add_executable(server ${SOURCE_FILES})
+target_sources(server PRIVATE server/server.c)
+
+add_executable(client ${SOURCE_FILES})
+target_sources(client PRIVATE client/client.c)

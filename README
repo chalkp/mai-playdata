@@ -1,17 +1,13 @@
 Mai Playdata
 ============
 
-file-based-database written in C for storing maimai playdata history
-
+database written in C for storing maimai playdata history
 this is just a project i made just for fun using the reason of learning database as an excuse.
 
+WARNING! This code may cause spontaneous autism, the author will not be responsible for any cause of unexpected autism from reading this code.
 
-planned file structure :
----------------------------
-mai-playdata (executable)
-mai-playdata (daemon)
-db/
-├─ rating-history.bin
-├─ track-history/
-   ├─ 2024-06-10.bin
-   ├─ 2024-06-11.bin
+depends on:
+- libssl-dev
+- zlib
+
+rating and scores will be stored in a different way

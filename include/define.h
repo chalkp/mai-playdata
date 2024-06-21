@@ -6,7 +6,7 @@
 
 // * object.h related defines
 
-#define SHA_ALGO SHA1
+#define SHA_ALGO SHA256
 #define OBJ_SHA_LENGTH SHA256_DIGEST_LENGTH
 #define SHA_STRING_LEN (OBJ_SHA_LENGTH<<1)+1
 #define GZ_BUFFER_SIZE 8192

@@ -79,7 +79,7 @@ struct object objectify(FILE *file) {
     return obj;
   }
 
-  gzFile obj_file = gzopen(obj_path, "wb+");
+  gzFile obj_file = gzopen(obj_path, "w6b");
   if (obj_file == NULL) {
     fprintf(stderr, "object.c/objectify: gzopen error\n");
     free(file_content);
